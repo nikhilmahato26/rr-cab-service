@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply bg-surface text-charcoal font-sans antialiased overflow-x-hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight text-navy;
+  }
+}
+
+@layer components {
+  /* Yellow brush stroke highlight effect */
+  .brush-accent {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+  }
+
+  .brush-accent::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: -4px;
+    right: -4px;
+    height: 38%;
+    background: #FFD629;
+    z-index: -1;
+    border-radius: 4px;
+    transform: rotate(-1deg);
+    opacity: 0.9;
+  }
+
+  .brush-accent-subtle::after {
+    height: 25%;
+    bottom: 0px;
+    opacity: 0.8;
+  }
+
+  /* Navy chip label with yellow check mark */
+  .navy-badge {
+    @apply inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-navy text-white text-xs font-semibold uppercase tracking-wider shadow-sm;
+  }
+
+  /* Glass navigation card */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-card-navy {
+    background: rgba(16, 29, 50, 0.92);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+
+  /* Yellow button glow */
+  .btn-yellow {
+    @apply bg-yellow hover:bg-yellow-hover text-navy font-bold transition-all duration-200 shadow-yellow-glow active:scale-[0.98] inline-flex items-center justify-center;
+  }
+
+  .btn-navy {
+    @apply bg-navy hover:bg-navy-light text-white font-semibold transition-all duration-200 shadow-navy-glow active:scale-[0.98] inline-flex items-center justify-center;
+  }
+
+  .btn-outline {
+    @apply border-2 border-navy text-navy hover:bg-navy hover:text-white font-semibold transition-all duration-200 active:scale-[0.98] inline-flex items-center justify-center;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F6F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
