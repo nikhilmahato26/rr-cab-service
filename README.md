@@ -1,32 +1,73 @@
-# React + TypeScript + Vite
+# RAJVEER RANVEER TOURS AND TRAVELS (RR CAB SERVICE)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive, production-ready cab booking and travel web application for **RAJVEER RANVEER TOURS AND TRAVELS (RR CAB SERVICE)**, based at Surur, Mahabaleshwar Phata, Wai, Satara, Maharashtra – 415517, India.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚖 Business Details
 
-## React Compiler
+- **Business Name:** RAJVEER RANVEER TOURS AND TRAVELS
+- **Brand Name:** RR CAB SERVICE
+- **Phone Number:** [+91 9096989585](tel:+919096989585)
+- **Email:** [rajveertravels2023@gmail.com](mailto:rajveertravels2023@gmail.com)
+- **Address:** At/Surur, Mahabaleshwar Phata, Wai, Satara, Maharashtra – 415517, India.
+- **Location:** [Google Maps Direct Link](https://www.google.com/maps/search/?api=1&query=Surur+Mahabaleshwar+Phata+Wai+Satara+Maharashtra+415517)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🚘 Fleet & Per-Kilometre Rates
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+| Vehicle | Listed Rate |
+|---|---|
+| **Toyota Innova Crysta** | ₹20/km |
+| **Kia Carens Clavis with Sunroof** | ₹18/km |
+| **Maruti Suzuki Ertiga** | ₹15/km |
+| **Hyundai Aura** | ₹14/km |
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+> **Rate Notice:** Rates are quoted per kilometre. Please contact us to confirm trip distance, minimum billing requirements, tolls, parking, driver allowances, and other applicable charges.
+
+---
+
+## 🌟 Key Features
+
+- **Official Brand Emblem:** Integrated crown and stylized emblem logo across the navbar, hero, about card, and favicon.
+- **Interactive Booking Form:** Form validation via React Hook Form and Zod with prefill listeners from fleet, trip types, and destinations.
+- **Dynamic WhatsApp Enquiry:** Automatic formatting and opening of customer enquiries on `+91 9096989585` using `encodeURIComponent`.
+- **Responsive Layout:** Optimized for mobile (320px–430px), tablet (768px–1024px), and desktop (1280px+).
+- **Mobile Sticky Action Bar:** Bottom bar with Call, WhatsApp, and Book triggers.
+- **Floating WhatsApp Button:** Desktop pulsing WhatsApp chat trigger.
+- **SEO & Structured Data:** Semantic HTML5, heading hierarchy, meta tags, and schema.org `TaxiService` JSON-LD.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** React 19 + TypeScript + Vite
+- **Styling:** Tailwind CSS + Vanilla CSS Design Tokens
+- **Icons:** Lucide React
+- **Forms & Validation:** React Hook Form + Zod + `@hookform/resolvers`
+- **Metadata:** React Helmet Async
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/nikhilmahato26/rr-cab-service.git
+cd rr-cab-service
+
+# Install dependencies
+npm install
+
+# Start local dev server
+npm run dev
+
+# Build for production
+npm run build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 📄 License
+© 2026 Rajveer Ranveer Tours and Travels. All rights reserved.
